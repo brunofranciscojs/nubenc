@@ -19,12 +19,12 @@ export default defineConfig({
       theme_color: '#9c01d8',
       icons: [
         {
-          src: 'nu.png',
+          src: '/nu.png',
           sizes: '192x192',
           type: 'image/png'
         },
         {
-          src: 'nu.png',
+          src: '/nu.png',
           sizes: '512x512',
           type: 'image/png'
         }
