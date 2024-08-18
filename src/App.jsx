@@ -54,14 +54,14 @@ function App() {
 
         <hr className="border-[#ddd] " />
 
-      <section className="my-8 px-7">
+      <section className="my-8">
         <CreditCard conta={conta}/>
       </section>
 
         <hr className="border-[#ddd] " />
 
       <section className='flex gap-4 justify-start overflow-x-scroll my-8 w-full px-7 [&::-webkit-scrollbar]:hidden'>
-        <div className=' dark:bg-[#1f1f1f] rounded-xl w-full mx-auto py-2 px-7 flex flex-col items-start'>
+        <div className=' dark:bg-[#1f1f1f] rounded-xl w-full mx-auto py-2 flex flex-col items-start'>
           <h2 className='dark:text-[#F0F1F5] text-black text-md font-semibold mb-5'>Empréstimo</h2> 
           <span>Valor disponível de até</span>
           <h2 className='dark:text-[#F0F1F5] text-black text-md font-semibold'>{emprestimo}</h2>
