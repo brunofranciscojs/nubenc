@@ -1,0 +1,15 @@
+{
+    "name": "Nubank",
+    "short_name": "o roxinho",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime totam officiis, numquam tempora architecto inventore?",
+    "icons": [{
+        "src": "/nu.svg",
+        "sizes": "192x192",
+        "type": "image/svg"
+      }],
+    "start_url": "/",
+    "display": "fullscreen",
+    "background_color": "#9c01d8",
+    "theme_color": "#9c01d8"
+  }
+  
