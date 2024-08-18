@@ -16,7 +16,7 @@ export default function Header({setConta}){
             <div className="flex flex-col text-white w-[200px] items-start gap-5">
 
                <div className="relative after:content-[''] after:absolute after:w-2.5 after:h-2.5 after:rounded-full after:bg-white after:-top-1 after:-right-1">
-                  <img src="/src/assets/bruno.png" className="rounded-full w-9 h-9 block object-cover object-center" />
+                  <img src="https://vercel.com/api/www/avatar?u=brunofranciscu&s=256" className="rounded-full w-9 h-9 block object-cover object-center" />
                </div>
 
                <div className="font-semibold text-xl">
