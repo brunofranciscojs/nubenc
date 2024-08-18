@@ -54,7 +54,7 @@ function App() {
         <hr className="border-[#ddd] " />
 
       <section className='flex gap-4 justify-start overflow-x-scroll my-8 w-full px-7 [&::-webkit-scrollbar]:hidden'>
-        <div className=' dark:bg-[#1f1f1f] rounded-xl w-full mx-auto py-2 flex flex-col items-start'>
+        <div className='dark:text-[#F0F1F5] rounded-xl w-full mx-auto py-2 flex flex-col items-start'>
           <h2 className='dark:text-[#F0F1F5] text-black text-md font-semibold mb-5'>Empréstimo</h2> 
           <span>Valor disponível de até</span>
           <h2 className='dark:text-[#F0F1F5] text-black text-md font-semibold'>{emprestimo}</h2>
@@ -65,7 +65,7 @@ function App() {
 
       <section className='overflow-x-scroll w-full px-7 [&::-webkit-scrollbar]:hidden my-8'>
         <h2 className='dark:text-[#F0F1F5] text-black text-md font-semibold mb-8'>Descubra mais</h2>
-        <div className="flex justify-start gap-16">
+        <div className="dark:text-[#F0F1F5] flex justify-start gap-16">
           <Descubra/>
         </div>
       </section>
