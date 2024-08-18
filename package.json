@@ -25,6 +25,7 @@
     "react": "latest",
     "react-dom": "latest",
     "tailwindcss": "^3.4.10",
-    "vite": "latest"
+    "vite": "latest",
+    "vite-plugin-pwa": "^0.20.1"
   }
 }
