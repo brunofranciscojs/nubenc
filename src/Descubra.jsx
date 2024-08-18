@@ -12,11 +12,11 @@ export default function Descubra(){
    return(
       <>
          {Object.entries(mais).map((item,index) =>(
-            <article className="flex flex-col gap-1 min-w-[250px] max-w-[250px] bg-[#F0F1F5] rounded-xl overflow-hidden" key={index}>
+            <article className="flex flex-col gap-1 min-w-[250px] max-w-[250px] bg-[#F0F1F5] dark:bg-[#222] rounded-xl overflow-hidden" key={index}>
                <img src="https://th.bing.com/th/id/OIP.jPGjaAILlFI90W_WhTX_TAHaE8?pid=ImgDet&w=269.74930362116993&h=180&c=7" className="block w-full mx-auto h-28 object-cover" />
                <div className="flex flex-col gap-4 px-5 py-8">
-                  <h2 className="font-bold text-black text-base">{item[0].replace(/\_/g,' ')}</h2>
-                  <span className="leading-none text-sm">{item[1]}</span>
+                  <h2 className="font-bold text-black text-base dark:text-[#1f1f1f]">{item[0].replace(/\_/g,' ')}</h2>
+                  <span className="leading-none dark:text-[#1f1f1f] text-sm">{item[1]}</span>
                   <button className="bg-[--roxo] text-white rounded-full px-6 py-2 w-fit">Conhecer</button>
                </div>
             </article>
