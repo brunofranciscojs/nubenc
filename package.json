@@ -1,0 +1,30 @@
+{
+  "name": "banco",
+  "version": "1.0.0",
+  "description": "banco fake para ñ ser roubado",
+  "main": "vite.config.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "start": "concurrently \"vite build --watch\" \"npm run hugo\"",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "test": "vitest",
+    "coverage": "vitest --coverage"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@splidejs/react-splide": "^0.7.12",
+    "vite": "^5.4.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "latest",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.41",
+    "react": "latest",
+    "react-dom": "latest",
+    "tailwindcss": "^3.4.10",
+    "vite": "latest"
+  }
+}
