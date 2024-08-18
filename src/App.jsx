@@ -1,16 +1,32 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Header from './components/Header'
 import Actions from './components/Actions'
 import Icon from './components/Icons'
 import News from './components/News'
+import CreditCard from './CreditCard'
+import Descubra from './Descubra'
 
 function App() {
-  const [conta, setConta] = useState('825,47')
+  const valor = (number) => new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL'}).format(number)
 
+  const [conta, setConta] = useState('825,47')
+  const [emprestimo, setEmprestimo] = useState(conta)
+
+  useEffect(() => {
+    if (typeof conta !== 'object') {
+       const valorNumerico = Number(conta.replace(/\D/g, ''));
+       const valorArredondado = Math.round(valorNumerico / 10) * 10;
+       const emprestimoFormatado = valor(valorArredondado * 0.8);
+       setEmprestimo(emprestimoFormatado);
+    } else {
+       setEmprestimo(conta);
+    }
+ }, [conta]);
+ 
   return (
-    <>
+    <main className="py-16">
       <Header setConta={setConta} />
-      <section className="flex justify-between pt-44 text-left items-start w-full px-7">
+      <section className="flex justify-between pt-28 text-left items-start w-full px-7">
         <div>
           <h2 className='text-black text-xl font-bold mb-2 dark:text-[#F0F1F5]'>Conta</h2> 
           <h3 className='text-black text-xl font-bold dark:text-[#F0F1F5]'>
@@ -32,10 +48,33 @@ function App() {
         </div>
       </section>
 
-      <section className='flex gap-4 justify-start overflow-x-scroll mt-8 w-full px-7 [&::-webkit-scrollbar]:hidden'>
+      <section className='flex gap-4 justify-start overflow-x-scroll my-8 w-full px-7 [&::-webkit-scrollbar]:hidden'>
           <News/>
       </section>
-    </>
+
+        <hr className="border-[#ddd] " />
+
+      <section className="my-8 px-7">
+        <CreditCard conta={conta}/>
+      </section>
+
+        <hr className="border-[#ddd] " />
+
+      <section className='flex gap-4 justify-start overflow-x-scroll my-8 w-full px-7 [&::-webkit-scrollbar]:hidden'>
+        <div className=' dark:bg-[#1f1f1f] rounded-xl w-full mx-auto py-2 px-7 flex flex-col items-start'>
+          <h2 className='dark:text-[#F0F1F5] text-black text-md font-semibold mb-5'>Empréstimo</h2> 
+          <span>Valor disponível de até</span>
+          <h2 className='dark:text-[#F0F1F5] text-black text-md font-semibold'>{emprestimo}</h2>
+        </div>
+      </section>
+      
+      <hr className="border-[#ddd]" />
+
+      <section className='flex justify-start overflow-x-scroll w-full px-7 [&::-webkit-scrollbar]:hidden gap-8 my-8'>
+        <Descubra/>
+      </section>
+
+    </main>
   )
 }
 

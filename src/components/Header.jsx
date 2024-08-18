@@ -11,7 +11,7 @@ export default function Header({setConta}){
    }
 
    return(
-      <header className="px-7 bg-[--roxo] py-8 fixed top-0 left-0 w-full">
+      <header className="px-7 bg-[--roxo] py-8 fixed top-0 left-0 w-full z-10">
         <div className="flex justify-between">
             <div className="flex flex-col text-white w-[200px] items-start gap-5">
 
