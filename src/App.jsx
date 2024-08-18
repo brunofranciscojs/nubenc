@@ -45,23 +45,23 @@ function App() {
           <News/>
       </section>
 
-        <hr className="border-[#ddd] " />
+        <hr className="border-[#ddd] dark:border-[#333]" />
 
       <section className="my-8">
         <CreditCard conta={conta}/>
       </section>
 
-        <hr className="border-[#ddd] " />
+        <hr className="border-[#ddd] dark:border-[#333]" />
 
       <section className='flex gap-4 justify-start overflow-x-scroll my-8 w-full px-7 [&::-webkit-scrollbar]:hidden'>
         <div className='dark:text-[#F0F1F5] rounded-xl w-full mx-auto py-2 flex flex-col items-start'>
           <h2 className='dark:text-[#F0F1F5] text-black text-md font-semibold mb-5'>Empréstimo</h2> 
-          <span>Valor disponível de até</span>
+          <span className='dark:text-[#F0F1F5]'>Valor disponível de até</span>
           <h2 className='dark:text-[#F0F1F5] text-black text-md font-semibold'>{emprestimo}</h2>
         </div>
       </section>
       
-      <hr className="border-[#ddd]" />
+      <hr className="border-[#ddd] dark:border-[#333]" />
 
       <section className='overflow-x-scroll w-full px-7 [&::-webkit-scrollbar]:hidden my-8'>
         <h2 className='dark:text-[#F0F1F5] text-black text-md font-semibold mb-8'>Descubra mais</h2>
