@@ -3,8 +3,8 @@ import Header from './components/Header'
 import Actions from './components/Actions'
 import Icon from './components/Icons'
 import News from './components/News'
-import CreditCard from './CreditCard'
-import Descubra from './Descubra'
+import CreditCard from './components/CreditCard'
+import Descubra from './components/Descubra'
 
 function App() {
   const valor = (number) => new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL'}).format(number)
