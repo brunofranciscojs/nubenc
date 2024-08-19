@@ -9,11 +9,13 @@ import Descubra from './Descubra'
 function App() {
   const valor = (number) => new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL'}).format(number)
 
-  const [conta, setConta] = useState('825,47')
+  const [conta, setConta] = useState('500,00')
   const [emprestimo, setEmprestimo] = useState(conta)
 
   useEffect(() => {
-    typeof conta !== 'object' ? setEmprestimo(valor(Math.round(Number(conta.replace(/\D/g, '')) / 10) * 10 * 0.1211993)) : setEmprestimo(conta);
+    typeof conta !== 'object' ? 
+        setEmprestimo(valor(Math.round(Number(conta.replace(/\D/g, '')) / 10) * 10 * 0.1211993)) : 
+        setEmprestimo(conta);
  }, [conta]);
  
   return (

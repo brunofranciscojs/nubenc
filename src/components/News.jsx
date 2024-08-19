@@ -3,7 +3,9 @@ import '@splidejs/react-splide/css';
 
 export default function News(){
    const news = [
-      'Seu informe de rendimentos 2024 já está disponível','Convide alguém para o Nubank e desbloqueie brasões incríveis','Facilite seus planos futuros: guarde dinheiro nas Caxinhas'
+      'Seu informe de rendimentos 2024 já está disponível',
+      'Convide alguém para o Nubank e desbloqueie brasões incríveis',
+      'Facilite seus planos futuros: guarde dinheiro nas Caxinhas'
    ]
 
    return(
